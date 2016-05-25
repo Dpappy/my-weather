@@ -26,8 +26,11 @@ $.simpleWeather({
       $('#cheney .city').text(weather.city);
       $('#cheney .temp').text(weather.temp);
       // Display Icon
-      $('#cheney i').addClass( 'icon-' + weather.code );        
-    
+      $('#cheney i').addClass( 'icon-' + weather.code );
+        
+    $('#d1 .day').text(weather.forecast[1].date);
+        $('#d1 .temp').text(weather.forecast[1].high);
+        $('#d1 i').text(weather.forecast[1].code);
       // Entire weather object
       console.log(weather);
     },
